@@ -1,0 +1,27 @@
+{
+    "name": "dawnki/laroute",
+    "version": "0.0.6",
+    "description": "Auto generate Laravel router's statement by phpdoc",
+    "type": "library",
+    "require": {
+        "php": ">=5.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dawnki",
+            "email": "dawnkichow@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "dawnki\\laroute\\" : "src/"
+        }
+    },
+    "dev-autoload": {
+        "psr-4": {
+            "dawnki\\laroute\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}
