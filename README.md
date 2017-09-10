@@ -4,13 +4,13 @@ Auto generate Laravel router's statement by phpdoc
 
 ## Usage
 
-  1. Import the vendor
+1.Import the vendor
 
 ```php
-composer require dawnki/laroute
+composer require dawnki/laroute dev-master
 ```
 
-  2. write the phpdoc in Laravel controller
+2.write the phpdoc in Laravel controller
   
 ```php
 class TestController {
@@ -25,7 +25,7 @@ class TestController {
 }
 ```
 
-  3. call the generator to get the route statements
+3.call the generator to get the route statements
   
 ```php
     $generator =  new \dawnki\laroute\Generate();
