@@ -8,8 +8,6 @@
 
 namespace dawnki\laroute;
 
-define('DEFAULT_NAMESPACE', 'App\Http\Controllers\\');
-
 class Generate
 {
     protected $namespace;
@@ -18,9 +16,9 @@ class Generate
 
     protected $result = [];
 
-    public function __construct($namespace = DEFAULT_NAMESPACE)
+    public function __construct($namespace = 'App\Http\Controllers\\')
     {
-        $this->parser = new Parse();
+        $this->parser = new Parse($namespace);
     }
 
     public function getOne($className)
@@ -38,7 +36,7 @@ class Generate
     {
         if ($this->result) {
             foreach ($this->result as $item) {
-                echo $item."\n";
+                echo $item . "\n";
             }
         }
     }

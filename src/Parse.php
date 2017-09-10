@@ -17,9 +17,9 @@ class Parse
 
     protected $export;
 
-    public function __construct()
+    public function __construct($namespace)
     {
-        $this->export = new Export();
+        $this->export = new Export($namespace);
     }
 
     public function bootstrap($className)
