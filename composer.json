@@ -1,6 +1,6 @@
 {
     "name": "dawnki/laroute",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Auto generate Laravel router's statement by phpdoc",
     "type": "library",
     "require": {

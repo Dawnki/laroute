@@ -32,7 +32,7 @@ class Parse
             $methodName = $method->getName();
             $httpMethod = $this->getHttpMethod($phpDoc);
             $route = $this->getRoute($phpDoc);
-            if (!$httpMethod || !$route) break;
+            if (!$httpMethod || !$route) continue;
             $this->statements[] = $this->export->get($httpMethod, $route, $className, $methodName);
         }
         return $this;
