@@ -32,6 +32,16 @@ class Generate
 
     }
 
+    public function toArray()
+    {
+        return $this->result;
+    }
+
+    public function toJson()
+    {
+        return json_encode($this->result);
+    }
+
     public function display()
     {
         if ($this->result) {
